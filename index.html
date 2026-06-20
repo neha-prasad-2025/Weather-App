@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">
+          <div class="basic-info">
+            <h1 id="location"></h1>
+            <div class="date-description">
+              <div id="date"></div>
+              <div class="time">
+                <div id="hrs"></div>
+                <div id="mins"></div>
+                <div id="am-pm"></div>
+              </div>
+            </div>
+          </div>
+          <div class="search-area">
+            <input type="text" placeholder="Enter city name" />
+            <div class="search-button">Search</div>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="temp-area">
+            <div class="temperature"></div>
+            <div class="temp-description">
+              <h5>°C</h5>
+              <p id="temp-text"></p>
+            </div>
+          </div>
+          <img alt="Weather Icon" />
+        </div>
+        <div class="footer">
+          <div class="box">
+            <i class="fa-solid fa-temperature-high"></i>
+            <h4>Feels Like</h4>
+            <p id="feels-like-text"></p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-droplet"></i>
+            <h4>Humidity</h4>
+            <p id="humidity-text"></p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-wind"></i>
+            <h4>Wind Speed</h4>
+            <p id="windspeed-text"></p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-smog"></i>
+            <h4>Air Quality</h4>
+            <p id="airquality-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
